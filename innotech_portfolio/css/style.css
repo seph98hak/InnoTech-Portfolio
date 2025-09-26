@@ -1,0 +1,198 @@
+
+body {
+    background-color: rgb(1, 19, 33);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../imag/3background.jpg')no-repeat center center;
+  background-size: cover;
+    
+  color: rgb(248, 244, 214);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.hero h1,
+.hero p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero h1:hover,
+.hero p:hover {
+  transform: scale(1.05);
+  color: #eeecde; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* getstarted part*/
+.hero .btn {
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ecef93;
+  transform: scale(1.05);  
+}
+
+
+/* SERVICES SECTION */
+#services {
+  background:  #041728;
+  position: relative;
+}
+
+#services h2 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #f6ffd9;
+  position: relative;
+  display: inline-block;
+}
+
+#services h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d3e1f7;
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+/* Service Cards */
+#services .card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+#services .card-body {
+  padding: 2rem 1.5rem;
+}
+
+#services .card i {
+  display: inline-block;
+  background: #eaf6f9;
+  padding: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#services .card h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#services .card p {
+  font-size: 0.95rem;
+  color: #f0f3d0;
+  line-height: 1.6;
+}
+
+/* Services Cards - Default Background */
+#services .card {
+  background-color:#29B6F6; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+#services .card:hover {
+  background-color: #88cefd; 
+  transform: translateY(-5px);
+}
+
+
+#services .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+}
+
+#services .card:hover i {
+  background: #d3e5ff;
+  color: #fff;
+}
+
+
+
+/* Portfolio */
+.portfolio img {
+  transition: transform 0.3s ease;
+}
+.portfolio img:hover {
+  transform: scale(1.05);
+}
+
+/* Portfolio Section Background */
+#portfolio {
+  background-color: #f0f8ff; 
+  padding: 60px 0;
+}
+
+
+#portfolio figure {
+  background: #29B6F6; 
+  padding: 10px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+#portfolio figure:hover {
+  background-color: #a0cef8; 
+  transform: translateY(-5px);
+}
+
+
+
+
+/* Contact Section */
+#contact {
+  padding: 3rem 0;
+}
+
+#contact h2 {
+  color: #f8fad9; 
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#contact label {
+  color: #f8fad9; 
+}
+
+#contact .form-control {
+  border-radius: 8px;
+  border: 1px solid #f8fad9;
+}
+
+#contact .btn {
+  background-color: #007bff; 
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#contact .btn:hover {
+  background-color: #0056b3; 
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
